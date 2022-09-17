@@ -54,5 +54,26 @@ public class TestRglExpr {
     public void Task2_1(){
         Assert.assertTrue(RegularExpressions.FindOutIfRegexIncluded("e02fd0e4-00fd-090A-ca30-0d00a0038ba0"));
     }
+    @Test
+    public void Task2_2(){
+        Assert.assertTrue(RegularExpressions.FindOutIfRegexIncluded("077ef8ae-0c41-49b3-aaa9-e1ba36f0f341"));
+    }
+    @Test
+    public void Task2_3(){
+        Assert.assertTrue(RegularExpressions.FindOutIfRegexIncluded("e517fb41-e032-46b2-a94b-9a2fcfa3f2f6"));
+    }
+    @Test
+    public void Task2_4(){
+        Assert.assertTrue(RegularExpressions.FindOutIfRegexIncluded("e02fd0e4-00fd-090A-CA30-0d00a0038ba0"));
+    }
+    @Test
+    public void Task2_5(){
+        Assert.assertTrue(RegularExpressions.FindOutIfRegexIncluded("11111111-2222-3333-4444-555555555555"));
+    }
+    @Test
+    public void Task2_6(){
+        Assert.assertTrue(RegularExpressions.FindOutIfRegexIncluded("aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee"));
+    }
+
 
 }
