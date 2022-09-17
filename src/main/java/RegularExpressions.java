@@ -29,4 +29,9 @@ public class RegularExpressions {
         else
             return null;
     }
+
+    public static boolean CheckPassword(String passw){
+        String pat = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])[\\w]{8,}$";
+        return passw.matches(pat);
+    }
 }
