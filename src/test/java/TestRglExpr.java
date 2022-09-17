@@ -48,7 +48,11 @@ public class TestRglExpr {
     }
     @Test
     public void Task1_6Wrong(){
-        Assert.assertFalse(RegularExpressions.Task1("Some random text, 255.255.255.255"));
+        Assert.assertFalse(RegularExpressions.Task1("Some random text, 255.255.255.255"));    }
+
+    @Test
+    public void Task2_1(){
+        Assert.assertTrue(RegularExpressions.Task2("e02fd0e4-00fd-090A-ca30-0d00a0038ba0"));
     }
 
 }
