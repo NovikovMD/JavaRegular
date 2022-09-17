@@ -101,7 +101,7 @@ public class TestRglExpr {
 
     @Test
     public void Task3_1(){
-        Assert.assertTrue(RegularExpressions.GetFromText("Some text http://www.example.com here"));
+        Assert.assertEquals("http://www.example.com",RegularExpressions.GetFromText("Some text http://www.example.com here "));
     }
 
 }
