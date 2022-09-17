@@ -99,4 +99,9 @@ public class TestRglExpr {
         Assert.assertFalse(RegularExpressions.FindOutIfRegexIncluded("aaaaaaaa-cccc-dddd-eeeeeeeeeeee"));
     }
 
+    @Test
+    public void Task3_1(){
+        Assert.assertTrue(RegularExpressions.GetFromText("Some text http://www.example.com here"));
+    }
+
 }
