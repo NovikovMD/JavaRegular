@@ -52,7 +52,7 @@ public class TestRglExpr {
 
     @Test
     public void Task2_1(){
-        Assert.assertTrue(RegularExpressions.Task2("e02fd0e4-00fd-090A-ca30-0d00a0038ba0"));
+        Assert.assertTrue(RegularExpressions.FindOutIfRegexIncluded("e02fd0e4-00fd-090A-ca30-0d00a0038ba0"));
     }
 
 }
