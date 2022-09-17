@@ -182,4 +182,29 @@ public class TestRglExpr {
         Assert.assertTrue(RegularExpressions.CheckPassword("_te_S_t_s777"));
     }
 
+    @Test
+    public void Task4_1wrong(){
+        Assert.assertFalse(RegularExpressions.CheckPassword("Cool_pass"));
+    }
+    @Test
+    public void Task4_2wrong(){
+        Assert.assertFalse(RegularExpressions.CheckPassword("C00l"));
+    }
+    @Test
+    public void Task4_3wrong(){
+        Assert.assertFalse(RegularExpressions.CheckPassword("Not_8"));
+    }
+    @Test
+    public void Task4_4wrong(){
+        Assert.assertFalse(RegularExpressions.CheckPassword("_te_s_t_s777"));
+    }
+    @Test
+    public void Task4_5wrong(){
+        Assert.assertFalse(RegularExpressions.CheckPassword("123456789"));
+    }
+    @Test
+    public void Task4_6wrong(){
+        Assert.assertFalse(RegularExpressions.CheckPassword("____________"));
+    }
+
 }
