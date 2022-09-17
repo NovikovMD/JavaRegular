@@ -157,4 +157,8 @@ public class TestRglExpr {
         Assert.assertNull(RegularExpressions.GetFromText("Some text https://www.google.com/search? here "));
     }
 
+    @Test
+    public void Task4_1(){
+        Assert.assertTrue(RegularExpressions.CheckPassword("C00l_pAss"));
+    }
 }
