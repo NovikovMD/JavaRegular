@@ -103,5 +103,29 @@ public class TestRglExpr {
     public void Task3_1(){
         Assert.assertEquals("http://www.example.com",RegularExpressions.GetFromText("Some text http://www.example.com here "));
     }
+    @Test
+    public void Task3_2(){
+        Assert.assertEquals("https://example.com",RegularExpressions.GetFromText("Some text https://example.com here "));
+    }
+    @Test
+    public void Task3_3(){
+        Assert.assertEquals("hue.com",RegularExpressions.GetFromText("Some text hue.com here "));
+    }
+    @Test
+    public void Task3_4(){
+        Assert.assertEquals("so-me.com",RegularExpressions.GetFromText("Some text so-me.com here "));
+    }
+    @Test
+    public void Task3_5(){
+        Assert.assertEquals("https://www.google.com/search?q=a2wd&sxsrf=ALiCzsZagi",RegularExpressions.GetFromText("Some text https://www.google.com/search?q=a2wd&sxsrf=ALiCzsZagi here "));
+    }
+    @Test
+    public void Task3_6(){
+        Assert.assertEquals("port.com:90",RegularExpressions.GetFromText("Some text port.com:90 here "));
+    }
+    @Test
+    public void Task3_7(){
+        Assert.assertEquals("www.sait.com/folder#yakor",RegularExpressions.GetFromText("Some text www.sait.com/folder#yakor here "));
+    }
 
 }

@@ -17,7 +17,11 @@ public class RegularExpressions {
     }
 
     public static String GetFromText(String text){//task3
-        Pattern p = Pattern.compile("(((https?)?:\\/\\/)?[0-9a-zA-Z][0-9a-zA-Z-]{0,63}[0-9a-zA-Z]\\.)+(ru|com|net)(:\\d+)?((\\/[0-9a-zA-Z][0-9a-zA-Z-]{0,63}[0-9a-zA-Z])+)?(\\/[a-zA-Z]+\\?(\\w+=\\w+)(&\\w+=\\w+)*)?(#\\w+)?");
+        Pattern p = Pattern.compile("(((https?)?:\\/\\/)?[0-9a-zA-Z][0-9a-zA-Z-]{0,63}[0-9a-zA-Z]\\.)+(ru|com|net)" +
+                "(:\\d+)?" +
+                "(\\/[a-zA-Z]+\\?(\\w+=\\w+)(&\\w+=\\w+)*)?" +
+                "((\\/[0-9a-zA-Z][0-9a-zA-Z-]{0,63}[0-9a-zA-Z])+)?" +
+                "(#\\w+)?");
         Matcher m = p.matcher(text);
         if (m.find()) {
             return m.group(0);
